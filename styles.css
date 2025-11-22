@@ -278,6 +278,25 @@ body {
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s;
+    background-color: #f1f5f9;
+    display: block;
+    min-height: 200px;
+}
+
+.service-image img[src=""],
+.service-image img:not([src]) {
+    background: linear-gradient(135deg, #fb923c 0%, #f97316 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.service-image img[src=""]::after,
+.service-image img:not([src])::after {
+    content: "🍽️ Посудомойка";
 }
 
 .service-card:hover .service-image img {
@@ -430,6 +449,8 @@ body {
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s;
+    background-color: #f1f5f9;
+    display: block;
 }
 
 .gallery-item:hover img {
