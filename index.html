@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мастер по ремонту телевизоров и бытовой техники</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-content">
+                    <div class="logo">
+                        <span class="logo-icon">🔧</span>
+                        <span class="logo-text">МастерТех</span>
+                    </div>
+                    <ul class="nav-menu">
+                        <li><a href="#home">Главная</a></li>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#statistics">Статистика</a></li>
+                        <li><a href="#gallery">Галерея</a></li>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                    </ul>
+                    <button class="menu-toggle" id="menuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Профессиональный ремонт телевизоров и бытовой техники</h1>
+                <p class="hero-subtitle">Быстро, качественно, с гарантией. Опыт работы более 10 лет.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Вызвать мастера</a>
+                    <a href="#services" class="btn btn-secondary">Наши услуги</a>
+                </div>
+                <div class="hero-features">
+                    <div class="feature-item">
+                        <span class="feature-icon">⚡</span>
+                        <span>Выезд в день обращения</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">🛡️</span>
+                        <span>Гарантия на работы</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">💰</span>
+                        <span>Честные цены</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1587825141308-9a0c0c0b5b3c?w=800&h=600&fit=crop" alt="Ремонт техники" class="hero-img">
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Наши услуги</h2>
+            <p class="section-subtitle">Ремонтируем все виды техники с гарантией качества</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=300&fit=crop" alt="Ремонт телевизоров">
+                    </div>
+                    <div class="service-icon">📺</div>
+                    <h3>Ремонт телевизоров</h3>
+                    <ul>
+                        <li>LED, LCD, OLED, QLED</li>
+                        <li>Замена матрицы</li>
+                        <li>Ремонт подсветки</li>
+                        <li>Настройка Smart TV</li>
+                        <li>Ремонт платы питания</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1571175443880-49e1d25bb2d4?w=400&h=300&fit=crop" alt="Ремонт холодильников">
+                    </div>
+                    <div class="service-icon">❄️</div>
+                    <h3>Ремонт холодильников</h3>
+                    <ul>
+                        <li>Устранение утечки фреона</li>
+                        <li>Замена компрессора</li>
+                        <li>Ремонт терморегулятора</li>
+                        <li>Чистка и дезинфекция</li>
+                        <li>Ремонт системы No Frost</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop" alt="Ремонт стиральных машин">
+                    </div>
+                    <div class="service-icon">🌀</div>
+                    <h3>Ремонт стиральных машин</h3>
+                    <ul>
+                        <li>Замена подшипников</li>
+                        <li>Ремонт помпы</li>
+                        <li>Чистка фильтров</li>
+                        <li>Замена ТЭНа</li>
+                        <li>Ремонт электронного модуля</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1574269909862-7e1d70bb8078?w=400&h=300&fit=crop" alt="Ремонт микроволновых печей">
+                    </div>
+                    <div class="service-icon">🔥</div>
+                    <h3>Ремонт микроволновых печей</h3>
+                    <ul>
+                        <li>Замена магнетрона</li>
+                        <li>Ремонт таймера</li>
+                        <li>Замена слюдяной пластины</li>
+                        <li>Ремонт блока управления</li>
+                        <li>Диагностика и чистка</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=400&h=300&fit=crop" alt="Ремонт посудомоечных машин">
+                    </div>
+                    <div class="service-icon">🍽️</div>
+                    <h3>Ремонт посудомоечных машин</h3>
+                    <ul>
+                        <li>Чистка фильтров</li>
+                        <li>Ремонт помпы</li>
+                        <li>Замена ТЭНа</li>
+                        <li>Ремонт блока управления</li>
+                        <li>Устранение протечек</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1631540577135-1e0b0a0c5b5e?w=400&h=300&fit=crop" alt="Ремонт кондиционеров">
+                    </div>
+                    <div class="service-icon">💨</div>
+                    <h3>Ремонт кондиционеров</h3>
+                    <ul>
+                        <li>Заправка фреоном</li>
+                        <li>Чистка и обслуживание</li>
+                        <li>Ремонт компрессора</li>
+                        <li>Замена фильтров</li>
+                        <li>Ремонт платы управления</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section id="statistics" class="statistics">
+        <div class="container">
+            <h2 class="section-title">Наша статистика</h2>
+            <p class="section-subtitle">Цифры, которые говорят сами за себя</p>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">5000+</div>
+                    <div class="stat-label">Отремонтированных устройств</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Довольных клиентов</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">Лет опыта</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Поддержка клиентов</div>
+                </div>
+            </div>
+            <div class="charts-container">
+                <div class="chart-wrapper">
+                    <h3>Популярные услуги</h3>
+                    <canvas id="servicesChart"></canvas>
+                </div>
+                <div class="chart-wrapper">
+                    <h3>Статистика за год</h3>
+                    <canvas id="yearlyChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Примеры наших работ</h2>
+            <p class="section-subtitle">Реальные результаты нашей работы</p>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=300&fit=crop" alt="Ремонт телевизора">
+                    <div class="gallery-overlay">
+                        <h4>Ремонт LED телевизора</h4>
+                        <p>Замена матрицы Samsung 55"</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1571175443880-49e1d25bb2d4?w=400&h=300&fit=crop" alt="Ремонт холодильника">
+                    <div class="gallery-overlay">
+                        <h4>Ремонт холодильника</h4>
+                        <p>Замена компрессора</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop" alt="Ремонт стиральной машины">
+                    <div class="gallery-overlay">
+                        <h4>Ремонт стиральной машины</h4>
+                        <p>Замена подшипников</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1631540577135-1e0b0a0c5b5e?w=400&h=300&fit=crop" alt="Обслуживание кондиционера">
+                    <div class="gallery-overlay">
+                        <h4>Обслуживание кондиционера</h4>
+                        <p>Чистка и заправка фреоном</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1574269909862-7e1d70bb8078?w=400&h=300&fit=crop" alt="Ремонт микроволновки">
+                    <div class="gallery-overlay">
+                        <h4>Ремонт микроволновки</h4>
+                        <p>Замена магнетрона</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=400&h=300&fit=crop" alt="Ремонт посудомоечной машины">
+                    <div class="gallery-overlay">
+                        <h4>Ремонт посудомоечной машины</h4>
+                        <p>Устранение протечки</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Почему выбирают нас</h2>
+                    <div class="advantages">
+                        <div class="advantage-item">
+                            <span class="advantage-icon">✅</span>
+                            <div>
+                                <h4>Опыт и профессионализм</h4>
+                                <p>Более 10 лет успешной работы. Ремонтируем технику всех производителей и моделей.</p>
+                            </div>
+                        </div>
+                        <div class="advantage-item">
+                            <span class="advantage-icon">⚡</span>
+                            <div>
+                                <h4>Быстрый выезд</h4>
+                                <p>Выезжаем в день обращения. Удобное время для вас.</p>
+                            </div>
+                        </div>
+                        <div class="advantage-item">
+                            <span class="advantage-icon">🛡️</span>
+                            <div>
+                                <h4>Гарантия качества</h4>
+                                <p>Даем гарантию на все виды работ и используемые запчасти.</p>
+                            </div>
+                        </div>
+                        <div class="advantage-item">
+                            <span class="advantage-icon">💰</span>
+                            <div>
+                                <h4>Прозрачные цены</h4>
+                                <p>Честная стоимость. Цена фиксируется до начала работ.</p>
+                            </div>
+                        </div>
+                        <div class="advantage-item">
+                            <span class="advantage-icon">🔧</span>
+                            <div>
+                                <h4>Оригинальные запчасти</h4>
+                                <p>Используем только качественные оригинальные и совместимые запчасти.</p>
+                            </div>
+                        </div>
+                        <div class="advantage-item">
+                            <span class="advantage-icon">📞</span>
+                            <div>
+                                <h4>Консультации</h4>
+                                <p>Бесплатная диагностика и консультация по телефону.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Свяжитесь с нами</h2>
+            <p class="section-subtitle">Оставьте заявку или позвоните нам прямо сейчас</p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <div>
+                            <h4>Телефон</h4>
+                            <a href="tel:+77777100144">+7 (777) 710-01-44</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📱</span>
+                        <div>
+                            <h4>WhatsApp / Telegram</h4>
+                            <a href="https://wa.me/77777100144">+7 (777) 710-01-44</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">✉️</span>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:info@mastertech.ru">info@mastertech.ru</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">🕐</span>
+                        <div>
+                            <h4>Режим работы</h4>
+                            <p>Пн-Вс: 8:00 - 20:00<br>Без выходных</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="device">Тип техники</label>
+                        <select id="device" name="device" required>
+                            <option value="">Выберите тип техники</option>
+                            <option value="tv">Телевизор</option>
+                            <option value="fridge">Холодильник</option>
+                            <option value="washer">Стиральная машина</option>
+                            <option value="microwave">Микроволновка</option>
+                            <option value="dishwasher">Посудомоечная машина</option>
+                            <option value="ac">Кондиционер</option>
+                            <option value="other">Другое</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="problem">Описание проблемы</label>
+                        <textarea id="problem" name="problem" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <span class="logo-icon">🔧</span>
+                        <span class="logo-text">МастерТех</span>
+                    </div>
+                    <p>Профессиональный ремонт техники с гарантией качества</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Услуги</h4>
+                    <ul>
+                        <li><a href="#services">Ремонт телевизоров</a></li>
+                        <li><a href="#services">Ремонт холодильников</a></li>
+                        <li><a href="#services">Ремонт стиральных машин</a></li>
+                        <li><a href="#services">Ремонт микроволновок</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <ul>
+                        <li>📞 +7 (777) 710-01-44</li>
+                        <li>✉️ info@mastertech.ru</li>
+                        <li>🕐 Пн-Вс: 8:00 - 20:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 МастерТех. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
